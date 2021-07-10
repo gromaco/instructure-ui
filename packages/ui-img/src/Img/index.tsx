@@ -30,7 +30,12 @@ import { passthroughProps } from '@instructure/ui-react-utils'
 import { supportsObjectFit } from '@instructure/ui-dom-utils'
 import { testable } from '@instructure/ui-testable'
 
-import { withStyle, jsx, ThemeablePropTypes } from '@instructure/emotion'
+import {
+  withStyle,
+  jsx,
+  ThemeablePropTypes,
+  Spacing
+} from '@instructure/emotion'
 
 import generateStyle from './styles'
 import generateComponentTheme from './theme'
@@ -41,7 +46,7 @@ type Props = {
   src: string
   alt?: string
   display?: 'inline-block' | 'block'
-  margin?: string
+  margin?: Spacing
   overlay?: {
     color: string
     opacity: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
